@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Keigo - Desenvolvedor</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Ryan Keigo</h1>
+            <button class="hamburger-menu" aria-label="Abrir menu de navegação">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-nav-overlay">
+        <nav class="mobile-nav">
+            <button class="close-menu" aria-label="Fechar menu de navegação">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item"><a href="#sobre" class="mobile-nav-link">Sobre</a></li>
+                <li class="mobile-nav-item"><a href="app.html" class="mobile-nav-link">Projetos</a></li>
+                <li class="mobile-nav-item"><a href="#contato" class="mobile-nav-link">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="sobre" class="section about">
+        <div class="container content-wrapper">
+            <div class="text-content">
+                <h2 class="section-title">Prazer, sou Ryan Keigo!</h2>
+                <p>Olá! Seja bem-vindo(a) à minha página.</p>
+                <p>Meu nome é Ryan Keigo Dakuzaku, tenho 18 anos e sou estudante de Análise e Desenvolvimento de Sistemas no Instituto Federal de Rondônia (IFRO), campus Ariquemes.</p>
+                <p>Desde pequeno, sou fascinado por tecnologia. Hoje, essa curiosidade virou mais que um hobby — está se tornando a base da minha carreira. Tenho me dedicado a aprender, crescer e me tornar um profissional qualificado na área de desenvolvimento de sistemas.</p>
+            </div>
+            <div class="image-content">
+                <img src="assets/img/Foto de Ryan Keigo.jpg" alt="Foto de Ryan Keigo" class="profile-pic">
+            </div>
+        </div>
+    </section>
+
+    <section id="dia-a-dia" class="section daily-life">
+        <div class="container">
+            <h2 class="section-title">Como Eu Vivo o Meu Dia a Dia</h2>
+            <p>Durante a semana, divido meu tempo entre os estudos e meu trabalho como desenhista cadista em uma empresa que desenvolve sistemas de irrigação para o agronegócio. Essa experiência tem me ensinado muito sobre precisão, responsabilidade e solução de problemas reais.</p>
+            <p>Atualmente moro no sítio, um ambiente tranquilo e conectado com a natureza. Esse estilo de vida me ajuda a manter o foco, valorizar o simples e equilibrar responsabilidades.</p>
+        </div>
+    </section>
+
+    <section id="paixoes" class="section hobbies">
+        <div class="container">
+            <h2 class="section-title">Minhas Paixões e Hobbies</h2>
+            <p>Nos momentos livres, gosto de três coisas que adoro fazer:</p>
+            <ul class="hobbies-list">
+                <li>Estudar programação</li>
+                <li>Assistir filmes e séries</li>
+                <li>Sair com minha namorada, Laisa Domingos de Araújo</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="video-dev" class="section video-section">
+        <div class="container">
+            <h2 class="section-title">Como Eu Desenvolvi Este Site</h2>
+            <p>Neste vídeo, explico o processo de criação e as tecnologias utilizadas para construir este portfólio. Espero que seja útil e inspirador!</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/JFH7vg-YK5A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Vamos Conversar?</h2>
+            <p>Se quiser falar comigo, tirar dúvidas, trocar ideias ou propor algo, fique à vontade! Basta preencher o formulário abaixo:</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem <span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="date">Data do contato (para agendamento, se necessário)</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="number">Número (telefone ou idade, opcional)</label>
+                    <input type="text" id="number" name="number">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Assunto do contato</label>
+                    <select id="subject" name="subject">
+                        <option value="">Selecione um assunto</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="elogio">Elogio</option>
+                        <option value="proposta">Proposta</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Permissão de contato</label>
+                    <div class="radio-group">
+                        <input type="radio" id="contact-email" name="contact-permission" value="email" checked>
+                        <label for="contact-email">Autorizo o contato por e-mail</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="contact-phone" name="contact-permission" value="phone">
+                        <label for="contact-phone">Autorizo o contato por telefone</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="contact-whatsapp" name="contact-permission" value="whatsapp">
+                        <label for="contact-whatsapp">Autorizo o contato por WhatsApp</label>
+                    </div>
+                </div>
+                <button type="submit" class="submit-button">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <h3 class="footer-title">Onde Me Encontrar</h3>
+            <p>Ryan Keigo Dakuzaku</p>
+            <p>Ariquemes – RO</p>
+            <p>📧 E-mail: ryankeigodakuzaku9@gmail.com</p>
+            <p>📱 Instagram: <a href="https://www.instagram.com/ryank.codes" target="_blank" rel="noopener noreferrer" class="footer-link">@ryankd</a></p>
+        </div>
+    </footer>
+
+    <div id="feedback-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
